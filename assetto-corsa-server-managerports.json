@@ -1,0 +1,9 @@
+[
+    {
+        "Protocol": "TCP",
+        "Port": "5667",
+        "Name": "Managerport",
+        "Description": "Port used for main game traffic",
+        "Ref": "Managerport"
+    }
+]
