@@ -2,15 +2,8 @@
     {
         "Protocol": "Both",
         "Port": "9100",
-        "Name": "Main Game Port",
+        "Name": "Gameport",
         "Description": "Port used for main game traffic",
-        "Ref": "MainGamePort"
-    },
-    {
-        "Protocol": "TCP",
-        "Port": "8081",
-        "Name": "Web Port",
-        "Description": "Port used for main game traffic",
-        "Ref": "WebPort"
+        "Ref": "Gameport"
     }
 ]
