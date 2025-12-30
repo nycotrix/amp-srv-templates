@@ -7,15 +7,12 @@
             {
                 "Heading": "$root",
                 "SettingMappings": {
+                    "//": "WIRD VON AMP KONTROLLIERT - NUTZE SERVER.CFG FUER MANUELLE SETTINGS",
                     "exec": "server.cfg",
-                    "sv_hostname": "sv_hostname",
-                    "sv_maxclients": "$MaxUsers",
-                    "rconpassword": "$RemoteAdminPassword",
-                    "g_gametype": "g_gametype",
-                    "sv_maxrate": "sv_maxrate",
-                    "sv_allowDownload": "sv_allowDownload",
-                    "g_allowvote": "g_allowvote",
-                    "timelimit": "timelimit"
+                    "seta sv_hostname": "sv_hostname",
+                    "seta rconpassword": "$RemoteAdminPassword",
+                    "seta sv_maxclients": "$MaxUsers",
+                    "seta g_gametype": "g_gametype"
                 }
             }
         ]

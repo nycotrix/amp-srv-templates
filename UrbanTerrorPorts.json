@@ -3,7 +3,7 @@
         "Protocol": "UDP",
         "Port": 27666,
         "Ref": "ServerPort",
-        "Name": "Server Port",
-        "Description": "Port für Game und RCON Traffic"
+        "Name": "Game Port",
+        "Description": "Standardport für Urban Terror"
     }
 ]

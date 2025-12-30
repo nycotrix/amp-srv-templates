@@ -1,13 +1,15 @@
-Meta.DisplayName=Urban Terror 4.3.4 (Pro)
-Meta.Description=Urban Terror Dedicated Server mit automatischer Map-Rotation
+Meta.DisplayName=Urban Terror 4.3.4 (Professional)
+Meta.Description=Urban Terror Dedicated Server mit vollständiger AMP-Integration.
 Meta.OS=Linux
 Meta.Arch=x86_64
+Meta.Author=Gemini Thought Partner
+Meta.DisplayImageSource=https://www.urbanterror.info/static/img/logo.png
 Meta.ConfigManifest=UrbanTerrorConfig.json
 Meta.MetaConfigManifest=UrbanTerrorMetaConfig.json
 Meta.ConfigRoot=UrbanTerror.kvp
-Meta.AppConfigId=urt-pro-deployment
 Meta.MinAMPVersion=2.4.6.0
-Meta.DisplayImageSource=url:https://cdn2.steamgriddb.com/grid/5928ecabcdc8f26faaa44e79476af2f0.png
+Meta.AppConfigId=urban-terror-pro-manifest
+
 App.DisplayName=Urban Terror
 App.RootDir=./urban-terror/
 App.BaseDirectory=./urban-terror/server/
@@ -15,6 +17,8 @@ App.ExecutableLinux=server/Quake3-UrT-Ded.x86_64
 App.WorkingDir=server
 App.CommandLineArgs={{$PlatformArgs}} +set fs_homepath "{{$FullBaseDir}}" +set net_port {{$ServerPort}} +set net_ip {{$ApplicationIPBinding}} +set fs_game q3ut4 +set rconpassword "{{$RemoteAdminPassword}}" {{$FormattedArgs}} +exec base.cfg
 App.AdminMethod=QuakeRCON
+App.UseRandomAdminPassword=True
+App.PersistRandomPassword=True
+App.RemoteAdminPassword=
 App.Ports=@IncludeJson[UrbanTerrorPorts.json]
-
 App.UpdateSources=@IncludeJson[UrbanTerrorUpdates.json]

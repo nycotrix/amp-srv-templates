@@ -1,36 +1,19 @@
 [
     {
-        "UpdateStageName": "Download Urban Terror",
+        "UpdateStageName": "Server Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://www.urbanterror.info/files/static/releases/q3ut4/UrbanTerror434_Full.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
-        "SkipOnFailure": false
+        "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Set Permissions",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "/bin/bash",
-        "UpdateSourceArgs": "-c \"chmod +x ./urban-terror/server/Quake3-UrT-Ded.x86_64\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Auto-Install Server Config",
+        "UpdateStageName": "Initialize Server Files",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"echo -e 'set m1 \"map ut4_abbey; set nextmap vstr m2\"\nset m2 \"map ut4_austria; set nextmap vstr m3\"\nset m3 \"map ut4_casa; set nextmap vstr m4\"\nset m4 \"map ut4_eagle; set nextmap vstr m1\"\nvstr m1' > ./urban-terror/server/q3ut4/server.cfg\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Initialize Base Config",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"echo 'exec server.cfg' > ./urban-terror/server/q3ut4/base.cfg\"",
-        "SkipOnFailure": false
+        "UpdateSourceArgs": "-c \"chmod +x ./urban-terror/server/Quake3-UrT-Ded.x86_64 && mkdir -p ./urban-terror/server/q3ut4 && echo -e 'set m1 \"map ut4_abbey; set nextmap vstr m2\"\nset m2 \"map ut4_austria; set nextmap vstr m1\"\nvstr m1' > ./urban-terror/server/q3ut4/server.cfg && echo 'exec server.cfg' > ./urban-terror/server/q3ut4/base.cfg\""
     }
 ]
