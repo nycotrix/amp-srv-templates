@@ -1,0 +1,19 @@
+Meta.DisplayName=Urban Terror 4.3.4 (Pro)
+Meta.Description=Urban Terror Dedicated Server mit automatischer Map-Rotation
+Meta.OS=Linux
+Meta.Arch=x86_64
+Meta.ConfigManifest=UrbanTerrorConfig.json
+Meta.MetaConfigManifest=UrbanTerrorMetaConfig.json
+Meta.ConfigRoot=UrbanTerror.kvp
+Meta.AppConfigId=urt-pro-deployment
+Meta.MinAMPVersion=2.4.6.0
+
+App.DisplayName=Urban Terror
+App.RootDir=./urban-terror/
+App.BaseDirectory=./urban-terror/server/
+App.ExecutableLinux=server/Quake3-UrT-Ded.x86_64
+App.WorkingDir=server
+App.CommandLineArgs={{$PlatformArgs}} +set fs_homepath "{{$FullBaseDir}}" +set net_port {{$ServerPort}} +set net_ip {{$ApplicationIPBinding}} +set fs_game q3ut4 +set rconpassword "{{$RemoteAdminPassword}}" {{$FormattedArgs}} +exec base.cfg
+App.AdminMethod=QuakeRCON
+App.Ports=@IncludeJson[UrbanTerrorPorts.json]
+App.UpdateSources=@IncludeJson[UrbanTerrorUpdates.json]

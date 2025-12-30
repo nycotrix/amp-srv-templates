@@ -1,0 +1,23 @@
+[
+    {
+        "ConfigFile": "q3ut4/base.cfg",
+        "ConfigType": "kvp",
+        "ConfigFormat": "seta {0} \"{1}\"",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "exec": "server.cfg",
+                    "sv_hostname": "sv_hostname",
+                    "sv_maxclients": "$MaxUsers",
+                    "rconpassword": "$RemoteAdminPassword",
+                    "g_gametype": "g_gametype",
+                    "sv_maxrate": "sv_maxrate",
+                    "sv_allowDownload": "sv_allowDownload",
+                    "g_allowvote": "g_allowvote",
+                    "timelimit": "timelimit"
+                }
+            }
+        ]
+    }
+]

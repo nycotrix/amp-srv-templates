@@ -1,0 +1,110 @@
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "Urban Terror:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Setzt den Namen des Servers, der in der Serverliste erscheint",
+        "Keywords": "server,name,sv_hostname",
+        "FieldName": "sv_hostname",
+        "InputType": "text",
+        "ParamFieldName": "sv_hostname",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Urban Terror Powered by AMP",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "RCON Passwort",
+        "Category": "Urban Terror:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Das Passwort für die Fernverwaltung (RCON)",
+        "Keywords": "rcon,password,rconpassword",
+        "FieldName": "$RemoteAdminPassword",
+        "InputType": "hidden",
+        "ParamFieldName": "rconpassword",
+        "IncludeInCommandLine": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Initialer Spieltyp",
+        "Category": "Urban Terror:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Setzt den Spielmodus beim Start des Servers",
+        "Keywords": "game,type,g_gametype",
+        "FieldName": "g_gametype",
+        "InputType": "enum",
+        "ParamFieldName": "g_gametype",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "4",
+        "EnumValues": {
+            "0": "Free For All",
+            "3": "Team Deathmatch",
+            "4": "Team Survivor",
+            "7": "Capture The Flag",
+            "8": "Bomb Mode"
+        }
+    },
+    {
+        "DisplayName": "Spielerlimit",
+        "Category": "Urban Terror:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Maximale Anzahl an Spielern auf dem Server",
+        "Keywords": "max,players,clients,sv_maxclients",
+        "FieldName": "$MaxUsers",
+        "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "32",
+        "ParamFieldName": "sv_maxclients",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "16",
+        "Placeholder": "16",
+        "Suffix": "Spieler",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Downloads erlauben",
+        "Category": "Urban Terror:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Ermöglicht Clients das Herunterladen von Maps vom Server",
+        "Keywords": "allow,download,sv_allowdownload",
+        "FieldName": "sv_allowDownload",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_allowDownload",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Zeitlimit",
+        "Category": "Urban Terror:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Zeitlimit pro Map in Minuten (0 = kein Limit)",
+        "Keywords": "time,limit,timelimit",
+        "FieldName": "timelimit",
+        "InputType": "number",
+        "MinValue": "0",
+        "ParamFieldName": "timelimit",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "15",
+        "Suffix": "Minuten",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Abstimmungen erlauben",
+        "Category": "Urban Terror:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Ermöglicht Spielern das Starten von Map-Votes",
+        "Keywords": "vote,voting,g_allowvote",
+        "FieldName": "g_allowVote",
+        "InputType": "checkbox",
+        "ParamFieldName": "g_allowVote",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    }
+]
