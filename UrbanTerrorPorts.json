@@ -1,9 +1,0 @@
-[
-    {
-        "Protocol": "UDP",
-        "Port": 27666,
-        "Ref": "ServerPort",
-        "Name": "Game Port",
-        "Description": "Standardport für Urban Terror"
-    }
-]
