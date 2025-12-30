@@ -7,7 +7,7 @@ Meta.MetaConfigManifest=UrbanTerrorMetaConfig.json
 Meta.ConfigRoot=UrbanTerror.kvp
 Meta.AppConfigId=urt-pro-deployment
 Meta.MinAMPVersion=2.4.6.0
-
+Meta.DisplayImageSource=url:https://cdn2.steamgriddb.com/grid/5928ecabcdc8f26faaa44e79476af2f0.png
 App.DisplayName=Urban Terror
 App.RootDir=./urban-terror/
 App.BaseDirectory=./urban-terror/server/
@@ -16,4 +16,5 @@ App.WorkingDir=server
 App.CommandLineArgs={{$PlatformArgs}} +set fs_homepath "{{$FullBaseDir}}" +set net_port {{$ServerPort}} +set net_ip {{$ApplicationIPBinding}} +set fs_game q3ut4 +set rconpassword "{{$RemoteAdminPassword}}" {{$FormattedArgs}} +exec base.cfg
 App.AdminMethod=QuakeRCON
 App.Ports=@IncludeJson[UrbanTerrorPorts.json]
+
 App.UpdateSources=@IncludeJson[UrbanTerrorUpdates.json]
