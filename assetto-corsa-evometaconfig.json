@@ -1,0 +1,12 @@
+[
+    {
+        "ConfigFile": "serverConfig/seasonconfig.json",
+        "ConfigType": "json",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "serverConfig/serverconfig.json",
+        "ConfigType": "json",
+        "AutoMap": true
+    }
+]
