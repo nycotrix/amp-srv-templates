@@ -1,1 +1,36 @@
-[]
+[
+    {
+        "DisplayName": "",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "configjson",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "configjson",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "serverConfig\\serverconfig.json",
+        "Placeholder": "serverConfig\\serverconfig.json",
+        "Suffix": "",
+        "Hidden": true,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "seasonjson",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "seasonjson",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "serverConfig\\seasonconfig.json",
+        "Placeholder": "serverConfig\\seasonconfig.json",
+        "Suffix": "",
+        "Hidden": true,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    }
+]
