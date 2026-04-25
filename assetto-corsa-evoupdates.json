@@ -1,7 +1,7 @@
 [
     {
         "UpdateStageName": "SteamDownload",
-        "UpdateSourcePlatform": "Windows",
+        "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "4564210",
         "UpdateSourceArgs": "3058630",
